@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>右侧信息</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<script>
+var w = document.body.clientWidth ;
+if(w<90){top.location.href = 'index.html';}
+</script>
+<div class="menu-container">
+	<menu>
+		<menuitem>
+		<img src="/img/144211.svg" />
+		<a href="https://www.44api.com">传统网页</a>
+		</menuitem>
+		<menuitem>
+		<img src="/img/144207.svg" />
+		<a href="/44api.apk">安卓APK</a>
+		</menuitem>
+			<menuitem>
+		<img src="/img/144207.svg" />
+		<a href="/44api.apk">苹果（越狱版）</a>
+		</menuitem>
+		<menuitem>
+		<img src="/img/144210.svg" />
+		<a href="https://www.9ntp.com">话题讨论</a>
+		</menuitem>
+		<menuitem>
+		<img src="/img/144198.svg" />
+		<a href="https://www.9nip.com">国际版</a>
+		</menuitem>    
+	</menu>
+	<div class="sliding-bar"></div>
+</div>
+<script src="/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(window).ready(function(){
+	  initMenu();
+	});
+
+	$('menuitem').hover(function(){
+	  var offset = $(this).offset();
+	  $('.sliding-bar').offset(offset);
+	});
+
+	$('menu').hover(function(){
+	  $('.sliding-bar').css({opacity:1});
+	},function(){
+	  $('.sliding-bar').css({opacity:0});
+	})
+	var initMenu = function () {
+	  var $initElem = $('menuitem:first-of-type');
+	  var initOffset = $initElem.offset();
+	  var initSize = {
+		width: $initElem.css('width'),
+		height: $initElem.css('height')    
+	  }
+	  $('.sliding-bar')
+		.offset(initOffset)
+		.css(initSize)
+	}
+</script>
+</body>
+</html>

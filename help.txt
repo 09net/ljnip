@@ -1,0 +1,13 @@
+9nip:Nearby information release system
+零久附近通是由娄底零久网络科技有限公司开发的附近信息发布系统，您可要免费试用！
+程序很简单，请大家自行学习了解
+已经实现的主要功能：
+1、多语言
+2、微信小程序，百度小程序，QQ小程序，APP、H5端
+栏目申请
+https://www.44api.com/f/add
+分红系统
+https://www.44api.com/union
+请修改index.js里面的upuid
+注意：调试请用chorme 的手机端视图（F12 -> 手机端）
+PS：大家可要用本源代码生成APP、各种小程序，能不能赚钱就靠你自己了

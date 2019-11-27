@@ -1,0 +1,193 @@
+{
+	"pages": [
+		{
+			"path": "pages/chat/index",
+			"style": {
+				"navigationBarTitleText": "44api.com",
+				   "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "share"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/chat/more",
+			"style": {
+				"navigationBarTitleText": "more",
+				   "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "share"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/chat/f",
+			"style": {
+				"navigationBarTitleText": "9NIP",
+				 "enablePullDownRefresh": true,
+				   "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "share"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/user/friend",
+			"style": {
+				"navigationBarTitleText": "friend",
+				 "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "menu"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/user/chat",
+			"style": {
+				"navigationBarTitleText": "chat",
+				 "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "menu"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/chat/s",
+			"style": {
+				"navigationBarTitleText": "search",
+				"app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "share"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/chat/fav",
+			"style": {
+				"navigationBarTitleText": "fav"
+			}
+		},{
+			"path": "pages/chat/t",
+			"style": {
+				"navigationBarTitleText": "browse",
+				 "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "share"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/chat/add",
+			"style": {
+				"navigationBarTitleText": "Information addition"
+			}
+		},{
+			"path": "pages/user/f",
+			"style": {
+				"navigationBarTitleText": "all"
+			}
+		},{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "Personal homepage"
+			}
+		},{
+			"path": "pages/user/set",
+			"style": {
+				"navigationBarTitleText": "Set up"
+			}
+		},{
+			"path": "pages/user/web",
+			"style": {
+				"navigationBarTitleText": "Browser",
+				 "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "menu"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/com/index",
+			"style": {
+				"navigationBarTitleText": "comment"
+			}
+		},{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "my",
+				   "app-plus" : {
+				    "titleNView" : {
+				        "buttons" : [
+				            {
+				                "type" : "share"
+				            }
+				        ]
+				    }
+				}
+			}
+		},{
+			"path": "pages/index/about",
+			"style": {
+				"navigationBarTitleText": "contact"
+			}
+		},{
+			"path": "pages/index/qrcode",
+			"style": {
+				"navigationBarTitleText": "QR code"
+			}
+		},{
+			"path": "pages/index/nips",
+			"style": {
+				"navigationBarTitleText": "Privacy protocol"
+			}
+		},{
+			"path": "pages/index/lang",
+			"style": {
+				"navigationBarTitleText": "Language"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "零久附近通",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"backgroundColorTop": "#F4F5F6",
+		"backgroundColorBottom": "#F4F5F6",
+		"mp-alipay": {
+			"titleBarColor": "#FFFFFF"
+		}
+	}
+}

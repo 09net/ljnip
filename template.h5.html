@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="icon" href="https://www.44api.com/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="https://www.44api.com/favicon.ico" type="image/x-icon" />
+		<link rel="bookmark" href="https://www.44api.com/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="https://www.44api.com/favicon.png"/>
+		<link rel="apple-touch-icon-precomposed" href="https://www.44api.com/favicon.png"/>
+		<title><%= htmlWebpackPlugin.options.title %> -H5手机版</title>
+		<meta content="零久附近通,附近信息,同城信息,免费信息发布" name="keywords" />
+		<meta content="零久附近通_真实有效的附近信息发布系统,比传统的同城信息更真实，更科学，技术更先进！采用全静态托管及开放API调用，输出样式更多，覆盖人群更广。" name="description" />
+		<script src="/static/ysv8/touch-emulator.js"></script>
+		<script>
+	TouchEmulator(); 
+			var UA = window.navigator.userAgent.toLowerCase();
+			var isAndroid = UA.indexOf('android') > 0;
+			var isIOS = /iphone|ipad|ipod|ios/.test(UA);
+			if (!(isAndroid || isIOS)) {
+
+			}
+function getQueryString(name) { 
+ var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+ var r = window.location.search.substr(1).match(reg); 
+ if (r != null) return decodeURI(r[2]); 
+ return null; 
+ }
+ function in_array(search,array){
+    for(var i in array){
+        if(array[i]==search){
+            return true;
+        }
+    }
+    return false;
+}
+ var lang=getQueryString('lang');
+ if(lang && typeof(localStorage) != "undefined"){
+	 lang=lang.toLowerCase();
+	 if(in_array(lang,['zh','cht','en','ja','ko','es','ar','ru','fr','hi','de','pt'])){
+	 localStorage.setItem("lang",lang); 
+	 }
+ }
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				document.documentElement.style.fontSize = Math.max(document.documentElement.clientWidth / 20,16) + 'px'
+			})
+		</script>
+		<link rel="stylesheet" href="<%= BASE_URL %>static/index.css" />
+	</head>
+	<body>
+		<!-- 该文件为 H5 平台的模板 HTML，并非应用入口。 -->
+		<!-- 请勿在此文件编写页面代码或直接运行此文件。 -->
+		<!-- 详见文档：https://uniapp.dcloud.io/collocation/manifest?id=h5-template -->
+		<noscript>
+			<strong>Please enable JavaScript to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+		<script>var w = document.body.clientWidth;
+if(w>650){window.location.href = 'pc.html';}
+</script>
+	</body>
+</html>
